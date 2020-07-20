@@ -32,7 +32,6 @@
   grid-auto-flow: column;
   margin-top: 25vh;
   overflow: scroll;
-  transition: all ease-in-out 0.3s,
 }
 
 .Paper {
