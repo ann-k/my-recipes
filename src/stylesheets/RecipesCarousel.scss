@@ -1,0 +1,86 @@
+.RecipesCarousel {
+  position: fixed;
+  overflow: hidden;
+  height: 70vh;
+
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.Arrow {
+  position: fixed;
+  width: 5vh;
+  height: 5vh;
+  line-height: 5vh;
+
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 1;
+
+  border-radius: 5vh;
+  border: solid 0.5px transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+#ArrowLeft {
+  left: 0;
+  margin: auto 0 auto 30vw;
+
+  &:hover {
+    border: solid 0.5px;
+    transform: translate(-3px);
+  }
+}
+
+#ArrowRight {
+  right: 0;
+  margin: auto 30vw auto 0;
+
+  &:hover {
+    border: solid 0.5px;
+    transform: translate(3px);
+  }
+}
+
+.RecipesSlider {
+  display: grid;
+  grid-auto-flow: column;
+  overflow: scroll;
+  height: 100%;
+}
+
+.Recipe {
+  width: 100vw;
+  font-size: 18pt;
+  font-family: 'Caveat', cursive;
+}
+
+.Paper {
+  width: 30vw;
+  height: 100%;
+  overflow-y: scroll;
+  margin: auto;
+  background-color: #FFFCF4;
+  box-shadow: 10px 15px 10px 0px rgba(222,224,215,0.19);
+  border-radius: 2px;
+
+  // Frame inside the div
+  // box-sizing: border-box;
+  // border: 10px solid transparent;
+  // box-shadow: inset 0px 0px 0px 1px #E9CD96;
+}
+
+.Instruction {
+  white-space: pre-wrap;
+  cursor: pointer;
+}
+
+.Counter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto 10vh;
+}
